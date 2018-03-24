@@ -1,0 +1,61 @@
+.App {
+  text-align: center;
+  /* background-image: url('./Squares.mp4'); */
+}
+
+h2 {
+  border: 2px solid red;
+  width: 10rem; 
+  margin: 0;
+}
+ 
+/* initial content state before change*/
+.content {
+  border: 2px solid yellow;
+  width: 12%;
+  height: 2rem;
+  transition: 1s;
+}
+
+/* secondary content state after change */
+.alter {
+  transition: 1s;
+  height: 40rem;
+  background-color: #EEC335;
+}
+
+/* controlling initial text state*/
+section p {
+  transition: 300ms all ease;
+  opacity: 0;
+  will-change: opacity;
+}
+
+.show {
+  opacity: 1;
+}
+
+.App-logo {
+  animation: App-logo-spin infinite 20s linear;
+  height: 80px;
+}
+
+.App-header {
+  background-color: #222;
+  height: 150px;
+  padding: 20px;
+  color: white;
+}
+
+.App-title {
+  font-size: 1.5em;
+}
+
+.App-intro {
+  font-size: large;
+}
+
+@keyframes App-logo-spin {
+  from { transform: rotate(0deg); }
+  to { transform: rotate(360deg); }
+}

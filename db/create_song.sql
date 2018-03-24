@@ -1,0 +1,1 @@
+INSERT INTO songs(song, artist, album) values ($1, $2, $3)
